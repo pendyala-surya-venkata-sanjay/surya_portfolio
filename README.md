@@ -1,4 +1,4 @@
-## Cybersecurity Portfolio – Akula Naga Venkata Sanjay
+## AIML engineer portfolio-- pendyala surya venkata snajay
 
 Modern, dark, cybersecurity-themed portfolio built with **Next.js**, **Tailwind CSS**, **Framer Motion**, and **React Icons**.
 
