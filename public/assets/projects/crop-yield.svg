@@ -1,0 +1,38 @@
+<svg width="1200" height="600" viewBox="0 0 1200 600" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#0B1224"/>
+      <stop offset="1" stop-color="#020617"/>
+    </linearGradient>
+    <linearGradient id="field" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#34D399" stop-opacity="0.55"/>
+      <stop offset="1" stop-color="#16A34A" stop-opacity="0.25"/>
+    </linearGradient>
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="14"/>
+    </filter>
+  </defs>
+
+  <rect width="1200" height="600" fill="url(#sky)"/>
+
+  <g opacity="0.6" filter="url(#glow)">
+    <circle cx="900" cy="160" r="140" fill="#34D399" fill-opacity="0.18"/>
+    <circle cx="320" cy="220" r="110" fill="#38BDF8" fill-opacity="0.12"/>
+  </g>
+
+  <path d="M0 420C180 360 300 360 480 420C660 480 780 480 1200 420V600H0V420Z" fill="url(#field)"/>
+  <path d="M0 470C220 420 380 430 560 480C760 540 920 540 1200 480" stroke="#34D399" stroke-opacity="0.35" stroke-width="6"/>
+
+  <g opacity="0.9">
+    <rect x="70" y="70" width="360" height="70" rx="16" fill="#0B1224" fill-opacity="0.85" stroke="#34D399" stroke-opacity="0.35"/>
+    <text x="100" y="115" fill="#E2E8F0" font-size="26" font-family="Segoe UI, system-ui, -apple-system" font-weight="700">Crop Yield Prediction</text>
+  </g>
+
+  <g>
+    <path d="M860 410V320" stroke="#38BDF8" stroke-opacity="0.7" stroke-width="10" stroke-linecap="round"/>
+    <path d="M860 320C860 290 885 270 915 270C945 270 970 290 970 320V410" stroke="#34D399" stroke-opacity="0.75" stroke-width="10" stroke-linecap="round"/>
+    <circle cx="860" cy="320" r="8" fill="#38BDF8"/>
+    <circle cx="970" cy="320" r="8" fill="#34D399"/>
+  </g>
+</svg>
+

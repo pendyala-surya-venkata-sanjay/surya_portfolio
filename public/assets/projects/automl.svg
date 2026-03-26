@@ -1,0 +1,48 @@
+<svg width="1200" height="600" viewBox="0 0 1200 600" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="g1" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#34D399" stop-opacity="0.9"/>
+      <stop offset="1" stop-color="#38BDF8" stop-opacity="0.7"/>
+    </linearGradient>
+    <radialGradient id="r1" cx="0.35" cy="0.35" r="0.8">
+      <stop offset="0" stop-color="#34D399" stop-opacity="0.35"/>
+      <stop offset="1" stop-color="#020617" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="blur" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="18"/>
+    </filter>
+  </defs>
+  <rect width="1200" height="600" fill="#020617"/>
+  <rect width="1200" height="600" fill="url(#r1)"/>
+  <g opacity="0.28">
+    <path d="M40 110H1160" stroke="#34D399" stroke-opacity="0.4"/>
+    <path d="M40 210H1160" stroke="#38BDF8" stroke-opacity="0.25"/>
+    <path d="M40 310H1160" stroke="#34D399" stroke-opacity="0.25"/>
+    <path d="M40 410H1160" stroke="#38BDF8" stroke-opacity="0.22"/>
+    <path d="M200 60V540" stroke="#34D399" stroke-opacity="0.25"/>
+    <path d="M420 60V540" stroke="#38BDF8" stroke-opacity="0.18"/>
+    <path d="M640 60V540" stroke="#34D399" stroke-opacity="0.18"/>
+    <path d="M860 60V540" stroke="#38BDF8" stroke-opacity="0.16"/>
+    <path d="M1080 60V540" stroke="#34D399" stroke-opacity="0.16"/>
+  </g>
+
+  <g filter="url(#blur)" opacity="0.8">
+    <circle cx="330" cy="210" r="120" fill="#34D399" fill-opacity="0.18"/>
+    <circle cx="820" cy="260" r="150" fill="#38BDF8" fill-opacity="0.14"/>
+  </g>
+
+  <g>
+    <path d="M300 360C330 300 390 270 450 270C520 270 590 330 590 400" stroke="url(#g1)" stroke-width="10" stroke-linecap="round"/>
+    <path d="M610 400C610 320 680 260 760 260C850 260 920 330 920 420" stroke="url(#g1)" stroke-width="10" stroke-linecap="round" opacity="0.8"/>
+    <circle cx="300" cy="360" r="10" fill="#34D399"/>
+    <circle cx="590" cy="400" r="10" fill="#38BDF8"/>
+    <circle cx="610" cy="400" r="10" fill="#34D399"/>
+    <circle cx="920" cy="420" r="10" fill="#38BDF8"/>
+  </g>
+
+  <g opacity="0.9">
+    <rect x="70" y="70" width="260" height="70" rx="16" fill="#0B1224" fill-opacity="0.85" stroke="#34D399" stroke-opacity="0.35"/>
+    <text x="100" y="115" fill="#E2E8F0" font-size="26" font-family="Segoe UI, system-ui, -apple-system" font-weight="700">AutoML Platform</text>
+  </g>
+</svg>
+

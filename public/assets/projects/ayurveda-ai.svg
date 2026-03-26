@@ -1,0 +1,50 @@
+<svg width="1200" height="600" viewBox="0 0 1200 600" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#020617"/>
+      <stop offset="1" stop-color="#0B1224"/>
+    </linearGradient>
+    <linearGradient id="leaf" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#34D399" stop-opacity="0.9"/>
+      <stop offset="1" stop-color="#22C55E" stop-opacity="0.6"/>
+    </linearGradient>
+    <linearGradient id="ai" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#38BDF8" stop-opacity="0.8"/>
+      <stop offset="1" stop-color="#34D399" stop-opacity="0.7"/>
+    </linearGradient>
+    <filter id="blur" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="16"/>
+    </filter>
+  </defs>
+
+  <rect width="1200" height="600" fill="url(#bg)"/>
+
+  <g filter="url(#blur)" opacity="0.85">
+    <circle cx="340" cy="210" r="135" fill="#34D399" fill-opacity="0.14"/>
+    <circle cx="860" cy="230" r="165" fill="#38BDF8" fill-opacity="0.12"/>
+  </g>
+
+  <g opacity="0.28">
+    <path d="M80 520C220 440 340 410 520 430C700 450 860 520 1120 480" stroke="#34D399" stroke-opacity="0.35" stroke-width="7" stroke-linecap="round"/>
+    <path d="M120 430C260 380 420 360 560 380C700 400 860 460 1040 430" stroke="#38BDF8" stroke-opacity="0.22" stroke-width="6" stroke-linecap="round"/>
+  </g>
+
+  <g>
+    <path d="M520 420C430 350 430 250 540 210C650 170 740 230 760 300C780 365 710 430 620 450C585 458 550 448 520 420Z" fill="url(#leaf)" fill-opacity="0.7"/>
+    <path d="M600 210C610 250 595 290 565 315C535 340 500 355 460 360" stroke="#34D399" stroke-opacity="0.55" stroke-width="8" stroke-linecap="round"/>
+  </g>
+
+  <g opacity="0.9">
+    <rect x="70" y="70" width="470" height="70" rx="16" fill="#0B1224" fill-opacity="0.85" stroke="#34D399" stroke-opacity="0.35"/>
+    <text x="100" y="115" fill="#E2E8F0" font-size="26" font-family="Segoe UI, system-ui, -apple-system" font-weight="700">Ayurveda AI Consultation</text>
+  </g>
+
+  <g>
+    <rect x="850" y="320" width="210" height="150" rx="18" fill="#0B1224" fill-opacity="0.72" stroke="#38BDF8" stroke-opacity="0.35"/>
+    <path d="M900 395H1010" stroke="url(#ai)" stroke-width="10" stroke-linecap="round"/>
+    <path d="M900 435H980" stroke="url(#ai)" stroke-width="10" stroke-linecap="round" opacity="0.85"/>
+    <circle cx="885" cy="395" r="7" fill="#38BDF8" opacity="0.9"/>
+    <circle cx="885" cy="435" r="7" fill="#34D399" opacity="0.9"/>
+  </g>
+</svg>
+

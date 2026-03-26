@@ -1,0 +1,195 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body {
+  @apply bg-cyber-bg text-slate-100 scroll-smooth;
+}
+
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "SF Pro Text",
+    "Segoe UI", sans-serif;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #020617;
+}
+::-webkit-scrollbar-thumb {
+  background: #15803d;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #16a34a;
+}
+
+.matrix-bg {
+  position: relative;
+  isolation: isolate;
+  background-color: #01040c;
+  background-image: linear-gradient(
+      rgba(15, 23, 42, 0.9),
+      rgba(15, 23, 42, 0.9)
+    ),
+    repeating-linear-gradient(
+      90deg,
+      rgba(15, 23, 42, 0.85) 0,
+      rgba(15, 23, 42, 0.85) 1px,
+      transparent 1px,
+      transparent 40px
+    ),
+    repeating-linear-gradient(
+      180deg,
+      rgba(15, 23, 42, 0.85) 0,
+      rgba(15, 23, 42, 0.85) 1px,
+      transparent 1px,
+      transparent 40px
+    );
+  background-size: auto, 40px 40px, 40px 40px;
+  background-attachment: fixed;
+}
+
+.matrix-bg::before,
+.matrix-bg::after {
+  content: "";
+  position: fixed;
+  inset: -20%;
+  pointer-events: none;
+  z-index: -1;
+}
+
+.matrix-bg::before {
+  background:
+    radial-gradient(circle at 18% 22%, rgba(16, 185, 129, 0.18), transparent 38%),
+    radial-gradient(circle at 82% 18%, rgba(56, 189, 248, 0.16), transparent 42%),
+    radial-gradient(circle at 52% 86%, rgba(168, 85, 247, 0.12), transparent 40%),
+    radial-gradient(circle at 70% 65%, rgba(244, 114, 182, 0.11), transparent 45%);
+  filter: blur(16px);
+  animation: gradientFloat 20s ease-in-out infinite alternate;
+  opacity: 0.42;
+}
+
+.matrix-bg::after {
+  background-image:
+    radial-gradient(rgba(52, 211, 153, 0.14) 1px, transparent 1px),
+    radial-gradient(rgba(56, 189, 248, 0.1) 1px, transparent 1px);
+  background-size: 60px 60px, 90px 90px;
+  background-position: 0 0, 25px 35px;
+  opacity: 0.16;
+  animation: driftDots 30s linear infinite;
+}
+
+.bg-variant-premium::before {
+  filter: blur(26px) saturate(1.05);
+  opacity: 0.65;
+  animation-duration: 30s;
+}
+
+.bg-variant-premium::after {
+  opacity: 0.16;
+  animation-duration: 46s;
+}
+
+.bg-variant-futuristic::before {
+  filter: blur(18px) saturate(1.2);
+  opacity: 0.95;
+  animation-duration: 16s;
+}
+
+.bg-variant-futuristic::after {
+  opacity: 0.42;
+  animation-duration: 22s;
+}
+
+.network-canvas {
+  position: fixed;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  pointer-events: none;
+  opacity: 0.55;
+}
+
+@keyframes gradientFloat {
+  0% {
+    transform: translate3d(-2%, -1%, 0) scale(1);
+  }
+  50% {
+    transform: translate3d(2%, 2%, 0) scale(1.03);
+  }
+  100% {
+    transform: translate3d(4%, -2%, 0) scale(1.05);
+  }
+}
+
+@keyframes driftDots {
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
+  100% {
+    transform: translate3d(0, 70px, 0);
+  }
+}
+
+.glass-card {
+  @apply bg-cyber-card/80 border border-emerald-500/20 backdrop-blur-md;
+}
+
+.section-title {
+  @apply text-3xl md:text-4xl font-semibold tracking-tight flex items-center gap-3;
+}
+
+.section-pill {
+  @apply inline-flex items-center gap-2 rounded-full bg-emerald-500/10 border border-emerald-400/30 px-3 py-1 text-xs font-medium uppercase tracking-[0.16em] text-emerald-300;
+}
+
+.tilt-card {
+  transform-style: preserve-3d;
+  transition: transform 240ms ease, box-shadow 240ms ease;
+}
+
+.tilt-card:hover {
+  transform: perspective(900px) rotateX(4deg) rotateY(-5deg) translateY(-2px);
+}
+
+.btn-primary {
+  position: relative;
+  overflow: hidden;
+}
+
+.btn-primary::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  transform: translateX(-120%);
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255, 255, 255, 0.35),
+    transparent
+  );
+  transition: transform 700ms ease;
+}
+
+.btn-primary:hover::after {
+  transform: translateX(120%);
+}
+
+.input-field {
+  @apply w-full rounded-lg bg-slate-900/70 border border-slate-700/80 px-4 py-2.5 text-sm text-slate-100 placeholder:text-slate-500 outline-none focus:border-emerald-400 focus:ring-2 focus:ring-emerald-500/40 transition;
+}
+
+.btn-primary {
+  @apply inline-flex items-center justify-center gap-2 rounded-full bg-emerald-500 px-6 py-2.5 text-sm font-semibold text-slate-900 shadow-cyber-glow hover:bg-emerald-400 focus:ring-2 focus:ring-emerald-500/60 focus:outline-none transition;
+  box-shadow: 0 0 0 1px rgba(56, 189, 248, 0.2),
+    0 0 10px rgba(168, 85, 247, 0.2),
+    0 0 18px rgba(244, 114, 182, 0.16);
+}
+
+.btn-outline {
+  @apply inline-flex items-center justify-center gap-2 rounded-full border border-emerald-400/60 bg-slate-900/60 px-6 py-2.5 text-sm font-semibold text-emerald-300 hover:bg-emerald-400/10 focus:ring-2 focus:ring-emerald-500/40 focus:outline-none transition;
+}
+
