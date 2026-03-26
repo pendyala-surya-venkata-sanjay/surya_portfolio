@@ -1,44 +1,120 @@
-## AIML engineer portfolio-- pendyala surya venkata snajay
+# 🚀 AI/ML Portfolio
 
-Modern, dark, cybersecurity-themed portfolio built with **Next.js**, **Tailwind CSS**, **Framer Motion**, and **React Icons**.
+A modern, responsive portfolio website built using Next.js and Tailwind CSS to showcase my projects, skills, and achievements in Artificial Intelligence and Machine Learning.
 
-### Project Structure
+---
 
-- **`/pages`**: Next.js pages (main entry: `index.js`)
-- **`/components`**: Reusable UI sections (Hero, About, Skills, Projects, Achievements, Certifications, Education, Contact, Layout)
-- **`/styles`**: Global Tailwind styles (`globals.css`)
-- **`/public/assets`** (create this folder): Static assets like the profile image
+## 🌐 Live Demo
 
-### Setup
+👉 https://surya-portfolio-psi.vercel.app/
+
+---
+<img width="1230" height="571" alt="image" src="https://github.com/user-attachments/assets/b79a0bae-7ee5-4734-999f-3d142880bad3" />
+
+
+## ✨ Features
+
+* ⚡ Fully responsive design
+* 🎨 Modern UI with Tailwind CSS
+* 🎬 Smooth animations using Framer Motion
+* 📂 Project showcase with real-world applications
+* 📬 Functional contact form with email integration
+* 🚀 Deployed on Vercel
+
+---
+
+## 🛠 Tech Stack
+
+* Next.js
+* React
+* Tailwind CSS
+* JavaScript
+* Framer Motion
+* Nodemailer
+
+---
+
+## 📂 Projects
+
+### 🔹 AutoML Platform
+
+Automated Machine Learning system that performs data preprocessing, model selection, and evaluation with minimal human intervention.
+
+### 🔹 Crop Yield Prediction
+
+Machine learning model to predict agricultural crop yield based on environmental and historical data.
+
+### 🔹 Disease Prediction System
+
+AI-based healthcare system that predicts diseases using machine learning algorithms.
+
+---
+
+## 📸 Screenshots
+
+<img width="1237" height="476" alt="image" src="https://github.com/user-attachments/assets/07360875-6794-4ed3-b9ea-fb91bf863753" />
+
+
+---
+
+## ⚙️ Installation & Setup
+
+Clone the repository:
 
 ```bash
-cd portfolio
+git clone https://github.com/pendyala-surya-venkata-sanjay/surya_portfolio.git
+cd surya_portfolio
+```
+
+Install dependencies:
+
+```bash
 npm install
+```
+
+Run the development server:
+
+```bash
 npm run dev
 ```
 
-The app runs at `http://localhost:3000`.
+---
 
-Place your profile photo at:
+## 🔐 Environment Variables
 
-- `public/assets/profile-placeholder.jpg` (or update the path in `Hero.js` to match your actual filename)
+Create a `.env.local` file in the root directory and add:
 
-### Deployment
+```env
+EMAIL_USER=your_email@gmail.com
+EMAIL_PASS=your_app_password
+```
 
-- **Vercel**
-  - Push to GitHub
-  - Import the repo in Vercel
-  - Framework preset: **Next.js**
-  - Build command: `npm run build`
-  - Output directory: `.next`
+⚠️ Use Gmail App Password (not your actual password)
 
-- **Netlify**
-  - Use “Import from Git”
-  - Build command: `npm run build`
-  - Publish directory: `.next`
-  - Enable Next.js runtime support if prompted
+---
 
-- **GitHub Pages**
-  - Recommended to deploy via **Vercel** or **Netlify** for Next.js.
-  - If you must use GitHub Pages, export a static build with `next export` and serve from the `out` folder (not all Next.js features are supported in static export).
+## 📬 Contact
 
+You can reach me through the contact form available on the website.
+
+---
+
+## 📌 Future Improvements
+
+* Add admin dashboard for messages
+* Add more AI/ML projects
+* Improve UI/UX further
+* Add blog section
+
+---
+
+## 👨‍💻 Author
+
+**Pendyala Surya Venkata Sanjay**
+B.Tech CSE (AI/ML)
+
+---
+
+## ⭐ Show your support
+
+If you like this project, please ⭐ the repository!
