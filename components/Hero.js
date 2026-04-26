@@ -123,10 +123,10 @@ export function Hero() {
             {/* Replace src with your actual profile image path under /public */}
             {/* e.g. /assets/profile-sanjay.jpg */}
             <img
-              src="/assets/surya-profile.png"
+              src="https://github.com/pendyala-surya-venkata-sanjay.png"
               alt="Surya profile"
               className="absolute inset-0 h-full w-full object-cover object-top"
-                style={{ objectPosition: "66% top" }}
+              style={{ objectPosition: "66% top" }}
               draggable="false"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-slate-950/60 via-transparent to-slate-950/40" />
